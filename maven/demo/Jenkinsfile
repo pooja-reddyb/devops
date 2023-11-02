@@ -28,7 +28,7 @@ pipeline {
         steps {
            script {
             sh """
-            cd devops-dummy-apps/maven/demo
+            cd maven/demo
             sudo docker build -t ${IMAGE}:${VERSION} .
             sudo docker images
             """
